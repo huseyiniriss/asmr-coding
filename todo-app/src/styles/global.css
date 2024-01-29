@@ -1,0 +1,62 @@
+@import url(reset.css);
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #E1BEE7;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 1px solid #D81B60;
+    background-color: #C2185B;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D81B60;
+}
+
+#todo-container {
+    width: 500px;
+    height: 500px;
+    background-color: #FCE4EC;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.75);
+    padding: 12px;
+}
+
+#todo-form {
+    display: flex;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+#todo-form>input {
+    flex: 1;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+#todo-list li>span {
+    flex: 1;
+}
+
+#todo-list li>span.completed {
+    text-decoration: line-through;
+}
